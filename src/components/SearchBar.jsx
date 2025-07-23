@@ -45,7 +45,15 @@ export default function SearchBar() {
           marginTop: "6em",
         }}
       >
-        <input value={name} onChange={(e) => setName(e.target.value)} />
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              search();
+            }
+          }}
+        />
         <button onClick={search}>RECHERCHER</button>
       </div>
 

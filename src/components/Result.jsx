@@ -34,7 +34,9 @@ export default function Result({ result }) {
             <p style={{ textAlign: "center" }}>
               Nombre de followers : {result.followers}
             </p>
-            <a href={result.html_url}>Lien vers le profil github</a>
+            <a href={result.html_url} target="_blank">
+              Lien vers le profil github
+            </a>
           </div>
         )}
       </div>
